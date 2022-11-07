@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <div className="navbar">
-      {screenWidth > 500 ? <Navigation /> : <MobileNavigation />}
+      {screenWidth < 500 ? <MobileNavigation /> : <Navigation />}
     </div>
   );
 };
