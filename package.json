@@ -15,10 +15,15 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "firebase": "^9.13.0",
+    "firebase-tools": "^11.16.0",
     "gatsby": "^4.24.7",
     "gatsby-plugin-sass": "^5.24.0",
+    "node-sass": "^7.0.3",
+    "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-router-dom": "^6.4.3",
     "sass": "^1.56.0"
   }
 }

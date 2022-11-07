@@ -1,0 +1,72 @@
+@import "./font.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    overflow-x: hidden;
+  }
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+}
+
+h2,
+h3,
+h4,
+p,
+span,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  color: rgb(68, 68, 68);
+}
+
+h2 {
+  font-size: 4rem;
+  text-transform: capitalize;
+
+  @media screen and (max-width: 500px) {
+    font-size: 3rem;
+  }
+}
+
+ul {
+  li {
+    a {
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}
+
+.page--about,
+.page--gallery,
+.page--enroll,
+.page--contact {
+  h2 {
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    position: relative;
+    color: #000;
+    &::after {
+      content: "";
+      padding: 0.1rem;
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      width: 80px;
+      border-radius: 5px;
+    }
+
+    @media screen and (max-width: 500px) {
+      margin-left: 2rem;
+      width: 60px;
+    }
+  }
+}

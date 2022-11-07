@@ -1,0 +1,7 @@
+.page--contact {
+  h2 {
+    &::after {
+      border: 3px solid rgba(6, 12, 63, 0.705);
+    }
+  }
+}

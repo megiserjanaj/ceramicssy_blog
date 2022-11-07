@@ -1,0 +1,76 @@
+.page--about {
+  &--intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    > div {
+      margin: 0 auto;
+      padding: 2rem;
+      max-width: 40%;
+      width: 100%;
+      text-align: left;
+      h2 {
+        margin-left: 0;
+        &::after {
+          border: 3px solid rgba(255, 22, 22, 1);
+        }
+      }
+      p {
+        color: #cf1616;
+      }
+
+      @media screen and (max-width: 1200px) {
+        padding: 2rem 6rem 2rem 1.5rem;
+        max-width: 80%;
+      }
+    }
+    img {
+      &:nth-of-type(2) {
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+      @media screen and (min-width: 1200px) and (max-width: 1500px) {
+        max-width: 55%;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      align-items: flex-start;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &--enroll--link {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    max-width: 15%;
+    width: 100%;
+    border: 1px solid #a5a5a5;
+    border-radius: 7px;
+    cursor: pointer;
+    a {
+      color: #000;
+      font-weight: 600;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      box-shadow: 2px 4px 8px #cf1616;
+      transform: translateY(2.5px);
+      transition: transform 0.5s;
+    }
+    @media screen and (max-width: 500px) {
+      max-width: 40%;
+    }
+    @media screen and (min-width: 500px) and (max-width: 1500px) {
+      max-width: 20%;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.card {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: left;
+
+  .image {
+    p {
+      font-size: 0.875rem;
+      font-style: italic;
+    }
+  }
+
+  .link {
+    a {
+      font-weight: 600;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+  }
+}

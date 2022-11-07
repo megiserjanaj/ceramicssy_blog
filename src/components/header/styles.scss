@@ -1,0 +1,147 @@
+.navbar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 10;
+
+  nav {
+    display: inline-flex;
+    > div {
+      margin: 0 3rem;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      li {
+        margin: 0 2rem;
+        list-style-type: none;
+
+        a {
+          color: #fff;
+          font-size: 1rem;
+          text-decoration: none;
+        }
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .button {
+        background-color: transparent;
+        border: none;
+        text-align: center;
+
+        span {
+          &:nth-of-type(4) {
+            color: #fff;
+            font-size: 0.875rem;
+            font-weight: 600;
+          }
+        }
+
+        .bar {
+          position: relative;
+          margin: 0.5rem auto;
+          display: block;
+          height: 3px;
+          width: 30px;
+          color: white;
+          background: white;
+          width: 30px;
+          transform-origin: center;
+          border-radius: 0.25rem;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 10%;
+    background: #000;
+    flex-direction: row-reverse;
+
+    img {
+      margin-left: 2rem;
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+/* .bar {
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      height: 3px;
+      width: 30px;
+      transform-origin: center;
+      border-radius: 0.25rem;
+      opacity: 1;
+      transition-property: color, background-color, border-color, fill,
+        stroke, opacity, box-shadow, transform, filter,
+        -webkit-text-decoration-color, -webkit-backdrop-filter;
+      transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+        filter, backdrop-filter;
+      transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+        filter, backdrop-filter, -webkit-text-decoration-color,
+        -webkit-backdrop-filter;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    } */
+
+.page--about,
+.page--gallery,
+.page--contact,
+.page--enroll {
+  .navbar {
+    ul {
+      li {
+        a {
+          position: relative;
+          color: #000;
+          &:hover {
+            color: #cf1616;
+            &::after {
+              content: "";
+              margin: 0 auto;
+              position: absolute;
+              bottom: -0.5rem;
+              right: 0;
+              width: 65px;
+              border: 1px solid #cf1616;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.page--about {
+  .navbar {
+    ul li {
+      a {
+        @media screen and (max-width: 1200px) {
+          color: #fff;
+          &:hover {
+            color: #fff;
+            &::after {
+              border: 1px solid #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
