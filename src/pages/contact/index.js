@@ -2,7 +2,7 @@ import * as React from "react";
 import "./styles.scss";
 
 import ScrollToTop from "../../components/scroll/ScrollToTop";
-import Navigation from "../../components/header/Navigation";
+import Header from "../../components/header/Header";
 import Form from "../../components/form/Form";
 import Footer from "../../components/footer/Footer";
 
@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div className="page--contact">
       <ScrollToTop />
-      <Navigation />
+      <Header />
       <h2>Get in touch</h2>
       <p>
         Contact Ceramicssy by completing the form below. Once you have submitted

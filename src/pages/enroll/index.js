@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import "./styles.scss";
 
 import ScrollToTop from "../../components/scroll/ScrollToTop";
-import Navigation from "../../components/header/Navigation";
+import Header from "../../components/header/Header";
 import Card from "../../components/card/Card";
 import Footer from "../../components/footer/Footer";
 
@@ -16,7 +16,7 @@ const Enroll = () => {
   return (
     <div className="page--enroll">
       <ScrollToTop />
-      <Navigation />
+      <Header />
       <h2>Enroll now</h2>
       <img src={image4} alt="" className="page--enroll--parallax" />
       <div className="page--enroll--cards">

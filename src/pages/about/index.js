@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import "./styles.scss";
 
 import ScrollToTop from "../../components/scroll/ScrollToTop";
-import Navigation from "../../components/header/Navigation";
+import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 
 import logo from "../../images/icons/ceramicssy_icon.png";
@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="page--about">
       <ScrollToTop />
-      <Navigation />
+      <Header />
       <div className="page--about--intro">
         <img src={image6} alt="" />
         <div>
