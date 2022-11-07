@@ -1,6 +1,4 @@
 .page--gallery {
-  margin-top: 10rem;
-
   h2 {
     &::after {
       border: 3px solid rgba(6, 12, 63, 0.705);
@@ -18,10 +16,6 @@
       grid-column-end: 4;
       grid-row-start: 1;
       grid-row-end: 6;
-
-      &:hover {
-        transform: scale(1.5);
-      }
     }
     &--2 {
       grid-column-start: 5;
