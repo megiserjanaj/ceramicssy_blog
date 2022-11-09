@@ -115,7 +115,7 @@ const Form = () => {
                 tabIndex={1}
                 autoComplete="off"
               />
-              <p className="">{fnameError}</p>
+              <p className="form--input--error">{fnameError}</p>
             </div>
             <div className="">
               <label htmlFor="lname" className="">
@@ -132,7 +132,7 @@ const Form = () => {
                 tabIndex={2}
                 autoComplete="off"
               />
-              <p className="">{lnameError}</p>
+              <p className="form--input--error">{lnameError}</p>
             </div>
           </div>
           <div className="">
@@ -150,7 +150,9 @@ const Form = () => {
               tabIndex={3}
               autoComplete="off"
             />
-            <p className="">{emailError}</p>
+            <p className="form--input--error" style={{ color: "red" }}>
+              {emailError}
+            </p>
           </div>
           <div className="">
             <label htmlFor="message" className="">
@@ -168,7 +170,7 @@ const Form = () => {
               tabIndex={4}
               autoComplete="off"
             ></textarea>
-            <p className="">{messageError}</p>
+            <p className="form--input--error">{messageError}</p>
           </div>
           <div className="">
             <button
