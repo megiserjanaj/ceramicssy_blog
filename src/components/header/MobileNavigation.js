@@ -1,10 +1,9 @@
 import * as React from "react";
 import { useState } from "react";
 import { Link } from "gatsby";
+import "./styles.scss";
 
 import { navLinks } from "../../routes";
-
-import "./styles.scss";
 
 import ceramicssy_icon from "../../images/icons/ceramicssy_icon.png";
 
@@ -26,9 +25,12 @@ const MobileNavigation = () => {
           }}
         >
           {open ? (
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8BM8K0P6UhJnZ2UyM51c2aqLcsUMKsa6XvoGCaB6xXRQ7e6ee_ckHC4J7cTZo2f7M4OA&usqp=CAU" />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8BM8K0P6UhJnZ2UyM51c2aqLcsUMKsa6XvoGCaB6xXRQ7e6ee_ckHC4J7cTZo2f7M4OA&usqp=CAU"
+              alt=""
+            />
           ) : (
-            <img src="https://i.postimg.cc/j5RRCtb2/menu.png" />
+            <img src="https://i.postimg.cc/j5RRCtb2/menu.png" alt="" />
           )}
         </div>
         {open && (

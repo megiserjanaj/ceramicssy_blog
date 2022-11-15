@@ -4,4 +4,13 @@
       border: 3px solid rgba(6, 12, 63, 0.705);
     }
   }
+
+  &--intro {
+    margin-left: 4rem;
+
+    @media screen and (max-width: 500px) {
+      margin: 0 1rem;
+      text-align: center;
+    }
+  }
 }
