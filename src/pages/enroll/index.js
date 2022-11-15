@@ -20,10 +20,10 @@ const Enroll = () => {
       <h2>Enroll now</h2>
       <img src={image4} alt="" className="page--enroll--parallax" />
       <div className="page--enroll--cards">
-        {enroll.map(({ title, text, price, i }) => {
+        {enroll.map(({ title, text, price, label, link, i }) => {
           return (
             <Card title={title} text={text} footnote={price} key={i}>
-              <Link to="/contact">Try it</Link>
+              <Link to={link}>{label}</Link>
             </Card>
           );
         })}

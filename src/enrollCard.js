@@ -11,14 +11,14 @@ const enroll = [
     text: "This is an eight week course on Monday mornings from 10:30am-1pm. During this course you will learn how to centre the clay on a pottery wheel, throw a cylinder shape, turn a foot on the base of your pot. Learn hand building techniques: pinching, coiling, slab building and pressing clay into plaster moulds. Projects are self directed and you can learn how to make plates, vessels or sculptures.",
     price: "2 hours 30 minutes @ £400.00",
     label: "Try it",
-    link: "",
+    link: "/contact",
   },
   {
     title: "Private Throwing Session / 1 person-Hammersmith",
     text: "A private throwing session for one person with Tom Norris. Tom will personally guide you through the steps to create bowls/cups or vases on the pottery wheel. You can keep 2-3 of your best works and we will clear glaze them. You can collect the work 2-3 weeks after your private throwing session.",
     price: "1 hour 30 minutes @ £135.00",
     label: "Try it",
-    link: "",
+    link: "https://github.com/megiserjanaj/ceramicssy_blog",
   },
 ];
 

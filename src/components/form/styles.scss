@@ -3,19 +3,20 @@
 
   form {
     margin: 4rem auto;
-    padding: 2rem;
+    padding: 3rem 2rem;
     max-width: 80%;
     width: 100%;
-    border: 1px solid #cdcdcd;
     border-radius: 10px;
     background-color: rgb(229 229 229 / 50%);
+    box-shadow: 4px 4px 10px #cdcdcd;
 
     input,
     textarea {
+      margin: 0.5rem auto;
       padding: 1rem;
       max-width: 500px;
       width: 100%;
-      border: 1px solid #cdcdcd;
+      border: none;
       border-radius: 5px;
 
       &::placeholder {
@@ -46,6 +47,7 @@
       background-color: #060c3f;
       border: 1px solid #060c3f;
       border-radius: 5px;
+      cursor: pointer;
 
       @media screen and (max-width: 500px) {
         max-width: 100px;
