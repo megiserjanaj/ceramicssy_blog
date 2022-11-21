@@ -7,12 +7,12 @@ import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
 
 const Header = () => {
-  const width = typeof window !== "undefined";
+  typeof window !== "undefined";
 
-  const [screenWidth, setScreenWidth] = useState(width);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const resizeFnx = () => {
-    setScreenWidth(width);
+    setScreenWidth(window.innerWidth);
   };
 
   useEffect(() => {
