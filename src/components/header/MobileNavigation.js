@@ -8,9 +8,8 @@ import { navLinks } from "../../routes";
 import ceramicssy_icon from "../../images/icons/ceramicssy_icon.png";
 
 const MobileNavigation = () => {
-  if (typeof window !== "undefined") {
-    width = window.innerWidth;
-  }
+  const width = typeof window !== "undefined";
+
   const [open, setOpen] = useState(false);
 
   return (
