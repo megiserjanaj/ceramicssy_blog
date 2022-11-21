@@ -7,7 +7,7 @@ import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
 
 const Header = () => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  /* const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const resizeFnx = () => {
     setScreenWidth(window.innerWidth);
@@ -18,11 +18,13 @@ const Header = () => {
     return () => {
       window.removeEventListener("resize", resizeFnx);
     };
-  }, []);
+  }, []); */
 
   return (
     <div className="navbar">
-      {screenWidth < 500 ? <MobileNavigation /> : <Navigation />}
+      {/* {screenWidth < 500 ? <MobileNavigation /> : <Navigation />} */}
+      <MobileNavigation />
+      <Navigation />
     </div>
   );
 };

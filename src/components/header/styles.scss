@@ -39,6 +39,10 @@
         display: flex;
       }
     }
+
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
   }
 
   &--mobile {
@@ -80,6 +84,10 @@
 
     &--icon {
       margin-left: 1rem;
+    }
+
+    @media screen and (min-width: 500px) {
+      display: none;
     }
   }
 }
