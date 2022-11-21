@@ -9,10 +9,10 @@ import MobileNavigation from "./MobileNavigation";
 const Header = () => {
   const width = typeof window !== "undefined";
 
-  const [screenWidth, setScreenWidth] = useState(window.width);
+  const [screenWidth, setScreenWidth] = useState(width);
 
   const resizeFnx = () => {
-    setScreenWidth(window.width);
+    setScreenWidth(width);
   };
 
   useEffect(() => {
