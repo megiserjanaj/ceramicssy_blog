@@ -7,8 +7,6 @@ import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
 
 const Header = () => {
-  typeof window !== "undefined";
-
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const resizeFnx = () => {
