@@ -8,7 +8,6 @@ import "../styles/main.scss";
 import logo from "../images/icons/ceramicssy_icon.png";
 import headerVideo from "../videos/production ID_4683409.mp4";
 
-import MobileNavigation from "../components/header/MobileNavigation";
 import ScrollToTop from "../components/scroll/ScrollToTop";
 import Video from "../components/video/Video";
 import Card from "../components/card/Card";
