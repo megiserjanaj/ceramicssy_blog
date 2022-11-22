@@ -6,11 +6,15 @@ import "./styles.scss";
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
 
+import helper, { getWinSize } from "../../utils/helper";
+
 const Header = () => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+const windowWidth=getWinSize().width;
+
+  const [screenWidth, setScreenWidth] = useState(windowWidth);
 
   const resizeFnx = () => {
-    setScreenWidth(window.innerWidth);
+    setScreenWidth(windowWidth);
   };
 
   useEffect(() => {
