@@ -1,54 +1,98 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Ceramicssy site
 
-## 🚀 Quick start
+This site is the Ceramicssy site, built on [Gatsby](https://www.gatsbyjs.com/).
 
-1.  **Create a Gatsby site.**
+The site **must meet WCAG 2.1 AA accessibility standards**.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+# Requirements
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+- Node v14.0 or higher.
+- Gatsby ^4.24.7.
+- Project is built with Gatsby and Firebase.
+- Deployment is done by surge.sh.
 
-2.  **Start developing.**
+# Installation
 
-    Navigate into your new site’s directory and start it up.
+To install the project, run the npm script:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+```bash
+$ npm install
+```
 
-3.  **Open the code and start customizing!**
+# Setup / Configuration
 
-    Your site is now running at http://localhost:8000!
+## Dependencies
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+When installing the Gatsby boilerplate, ensure your `package.json` has the required packages in the `dependencies` section.
 
-4.  **Learn more**
+## Locally
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```bash
+$ npm run deploy
+```
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Staging
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Merge to `main`.
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Production
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Merge to `main`.
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Scripts
 
-## 🚀 Quick start (Gatsby Cloud)
+Add the following commands to the scripts section of your package.json file
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+```json
+    "develop": "gatsby clean && gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "npm run build && node deploy.js"
+```
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+# Build
+
+To build the project, run the npm script:
+
+```bash
+$ npm run build
+```
+
+This will build the files for testing and deployment. You'll find the built version of the project in the `/build` folder.
+
+# Deployment
+
+## Locally
+
+To run the project locally, run the npm script:
+
+```bash
+$ npm start
+```
+
+or
+
+```bash
+$ npm run develop
+```
+
+Navigate to `http://localhost:8000/` to view the site
+
+## Supported Devices/Browsers
+
+| OS           | Device          | Browser          |
+| :----------- | :-------------- | :--------------- |
+| Windows 10   | Desktop         | Chrome (latest)  |
+| Windows 10   | Desktop         | Firefox (latest) |
+| Windows 10   | Desktop         | Edge (latest)    |
+| OSX Big Sur  | Desktop         | Safari (latest)  |
+| iOS (latest) | iPhone 7        | Safari           |
+| iOS (latest) | iPhone X        | Safari           |
+| iOS (latest) | iPhone 11       | Safari           |
+| iOS (latest) | iPad Air 2 9.7" | Safari           |
+| iOS (latest) | iPad Pro 10.5"  | Safari           |
+| iOS (latest) | iPad Pro 12.9"  | Safari           |
+| Android 8    | Galaxy S7       | Chrome (latest)  |
+| Android 8    | Galaxy S9       | Chrome (latest)  |
