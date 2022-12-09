@@ -6,7 +6,7 @@ The site **must meet WCAG 2.1 AA accessibility standards**.
 
 # Requirements
 
-- Node v14.0 or higher.
+- Node v14.0 or higher (14.16.1 is optimal).
 - Gatsby ^4.24.7.
 - Project is built with Gatsby and Firebase.
 - Deployment is done by surge.sh.
